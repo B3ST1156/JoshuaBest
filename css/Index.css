@@ -1,0 +1,135 @@
+/*This is my css file*/
+
+body {
+    background: red;
+}
+
+/*Primary Nav Styling*/
+/*==============================================================================================*/
+
+/* 
+* Imported `Global`
+* http://codepen.io/manikoth/pen/vxpQwK 
+*/
+
+nav ul {
+  display: flex;
+  /* Experiment with `justify-content` */
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a:link, 
+nav a:visited {
+  color: #000;
+  display: block;
+  padding: .5em;
+  margin: .5em;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:active {
+  color: #fff;
+  background: #a10022;
+  border-radius: 5px;
+  transition: 
+    background .5s,
+    border-radius 1s;
+}
+
+
+
+
+
+
+
+
+
+/*Contact Styling*/
+/*==============================================================================================*/
+
+/* Imported Global: http://codepen.io/manikoth/pen/vxpQwK */
+section {
+  background: #000;
+  color: #fff;
+  padding: 1em;
+  width: 50%;
+}
+
+label, 
+input,
+textarea {
+  display: block;
+  margin: .25em;
+  padding: .25em;
+  width: 100%;
+}
+
+textarea {
+  height: 5em;
+}
+
+input[type="submit"] {
+  background: #6d6e71;
+  border-radius: 5px;
+  width: 100;
+  padding: 1em;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  background: #a10022;
+  color: #fff;
+}
+
+:focus {
+  background: #ccc;
+}
+
+
+
+
+
+
+/*Portfolio Styling*/
+/*==============================================================================================/* 
+* Imported `Global`
+* http://codepen.io/manikoth/pen/vxpQwK 
+*/
+
+.gallery figure {
+  background: #ccc;
+  /* Note: Figures have default 1em margin. Optionally override. */
+  padding: 1em;
+  width: 350px;
+}
+
+.gallery img {
+  border: solid 5px #6d6e71;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.gallery figcaption {
+  margin-top: 1em;
+}
+
+/* Lightbox Overlay */
+
+/* hide  */
+.overlay {
+  display: none;
+}
+
+/* show */
+.overlay:target {
+  display: block;
+}
