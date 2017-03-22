@@ -1,6 +1,10 @@
 /*This is my css file*/
+/*==============================================================================================*/
+
+
 
 /* Border Box Sizing */
+/*==============================================================================================*/
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -8,16 +12,49 @@
 }
 
 /* Typography */
+/*==============================================================================================*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-body {
-    background: url(../img/1156_Option_1.JPG) no-repeat center center fixed;
+
+.index {
+    background: url(../img/Mech_1.JPG) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
 	font-size: 125%;
+}
+    
+.bio {
+    background: url(../img/Mech_8.JPG) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+	font-size: 125%;
+     }
+
+.portfolio {
+    background: url(../img/Mech_4.JPG) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+	font-size: 125%;
+     }
+
+.contact {
+    background: url(../img/Mech_9.JPG) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+	font-size: 125%;
+     }
 
 /*MediaQueries*/
 /*==============================================================================================*/ /* Mobile: 320px = 20em */
@@ -58,61 +95,71 @@ body {
 /*Primary Nav Styling*/
 /*==============================================================================================*/
 
-/* Dropdown Button */
-.dropbtn {
-    margin: 30px 0 0 30px;
-    background: url(../img/j_2.png);
-    width: 100px;
-    height: 100px;
-    color: transparent
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+.menu {
+    
+}
+
+#line1 {
+    background: white;
+    width: 700px;;
+    height: 2.5px;
+}
+#line1:hover {
+  
+    animation: crush_X 1s 1;
+    transform: translateX(300px);
+}
+
+#line2 {
+    background: white;
+    width:700px;
+    height: 2.5px;
+}
+#line2:hover {
+    animation: crush_X 1s 1;
 }
 
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
+h1 {
+    color: white;
+    max-width: 50%;
+    font-size: 5em;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+h1:hover {
+
+    color: red;
+    animation: crush_head .5s 1;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-    display: block;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-
+@-webkit-keyframes crush_head {
+    from {
+        -webkit-transform:scaleY(1); /* Safari and Chrome */
+    }
+    to {
+        -webkit-transform:scaleY(0.01); /* Safari and Chrome */
+    }
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
+@-webkit-keyframes crush_X {
+    from {
+        -webkit-transform:scaleX(.01); /* Safari and Chrome */
+    }
+    to {
+        -webkit-transform:scaleX(1); /* Safari and Chrome */
+    }
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropbtn:hover {
-
-    background-color: #3e8e41;
-    transition: background 1s;
-    border-radius: 5px;
-
+@-webkit-keyframes translate_X {
+    from {
+        transition: translateX
+    }
+    to {
+        -webkit-transform:scaleX(1); /* Safari and Chrome */
+    }
 }
+
+
 
 
 /*Contact Styling*/
@@ -203,3 +250,22 @@ input[type="submit"]:hover {
 .overlay:target {
   display: block;
 }
+
+
+
+
+/*Bio and Resume Styling*/
+/*==============================================================================================*/
+
+.resume {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+
+
+
