@@ -1,49 +1,104 @@
 /*This is my css file*/
 
+/* Border Box Sizing */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Typography */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 body {
-    background: red;
+    background: url(../img/1156_Option_1.JPG) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+	font-size: 125%;
+    
+    
 }
 
 /*Primary Nav Styling*/
 /*==============================================================================================*/
 
-/* 
-* Imported `Global`
-* http://codepen.io/manikoth/pen/vxpQwK 
-*/
-
-nav ul {
-  display: flex;
-  /* Experiment with `justify-content` */
+/* Dropdown Button */
+.dropbtn {
+    margin: 30px 0 0 30px;
+    background: url(../img/J.png);
+    width: 100px;
+    height: 100px;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-nav li {
-  list-style: none;
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-nav a:link, 
-nav a:visited {
-  color: #000;
-  display: block;
-  padding: .5em;
-  margin: .5em;
-  text-decoration: none;
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
-nav a:hover,
-nav a:active {
-  color: #fff;
-  background: #a10022;
-  border-radius: 5px;
-  transition: 
-    background .5s,
-    border-radius 1s;
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -58,7 +113,10 @@ nav a:active {
 
 /* Imported Global: http://codepen.io/manikoth/pen/vxpQwK */
 section {
-  background: #000;
+  display: block;
+  margin: auto;
+  
+  background: black;
   color: #fff;
   padding: 1em;
   width: 50%;
@@ -69,7 +127,7 @@ input,
 textarea {
   display: block;
   margin: .25em;
-  padding: .25em;
+  padding-top: .50em;
   width: 100%;
 }
 
@@ -99,12 +157,17 @@ input[type="submit"]:hover {
 
 
 
+
 /*Portfolio Styling*/
 /*==============================================================================================/* 
 * Imported `Global`
 * http://codepen.io/manikoth/pen/vxpQwK 
 */
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
 .gallery figure {
   background: #ccc;
   /* Note: Figures have default 1em margin. Optionally override. */
