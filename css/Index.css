@@ -14,6 +14,8 @@
 /* Typography */
 /*==============================================================================================*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+English:400i');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
 
 
 .index {
@@ -95,41 +97,66 @@
 /*Primary Nav Styling*/
 /*==============================================================================================*/
 
-.menu {
+/* 
+* Imported `Global`
+* http://codepen.io/manikoth/pen/vxpQwK 
+*/
+
+#name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   /* Experiment with `justify-content` */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, .75);
+}
+
+nav li {
+    display: inline-flex;
+
+    list-style: none;
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
     
 }
 
-#line1 {
-    background: white;
-    width: 700px;;
-    height: 2.5px;
+nav a:link, 
+nav a:visited {
+  color: white;
+  padding: .5em;
+  margin: .5em;
+  text-decoration: none;
 }
-#line1:hover {
+
+nav a:hover,
+nav a:active {
+  color: #fff;
+  background: #a10022;
+  border-radius: 5px;
+  transition: 
+    background .5s,
+    border-radius 1s;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
   
-    animation: crush_X 1s 1;
-    transform: translateX(300px);
-}
-
-#line2 {
-    background: white;
-    width:700px;
-    height: 2.5px;
-}
-#line2:hover {
-    animation: crush_X 1s 1;
-}
-
-
+    }
 h1 {
-    color: white;
-    max-width: 50%;
     font-size: 5em;
-}
-
-h1:hover {
-
-    color: red;
-    animation: crush_head .5s 1;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    
 }
 
 @-webkit-keyframes crush_head {
@@ -168,9 +195,9 @@ h1:hover {
 /* Imported Global: http://codepen.io/manikoth/pen/vxpQwK */
 section {
   display: block;
-  margin: auto;
-  
-  background: black;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, .75);
   color: #fff;
   padding: 1em;
   width: 50%;
@@ -179,14 +206,18 @@ section {
 label, 
 input,
 textarea {
+  
   display: block;
   margin: .25em;
   padding-top: .50em;
   width: 100%;
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
 }
 
 textarea {
   height: 5em;
+  
 }
 
 input[type="submit"] {
@@ -223,7 +254,8 @@ input[type="submit"]:hover {
     flex-wrap: wrap;
 }
 .gallery figure {
-  background: #ccc;
+  background: rgba(0, 0, 0, .75);
+  color: white;
   /* Note: Figures have default 1em margin. Optionally override. */
   padding: 1em;
   width: 350px;
@@ -237,6 +269,7 @@ input[type="submit"]:hover {
 
 .gallery figcaption {
   margin-top: 1em;
+  color: white;
 }
 
 /* Lightbox Overlay */
@@ -258,6 +291,7 @@ input[type="submit"]:hover {
 /*==============================================================================================*/
 
 .resume {
+    background: rgba(0, 0, 0, .75);
     color: white;
     display: flex;
     flex-direction: column;
