@@ -18,7 +18,40 @@ body {
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
 	font-size: 125%;
-    
+
+/*MediaQueries*/
+/*==============================================================================================*/ /* Mobile: 320px = 20em */
+@media screen and (min-width: 20em) { 
+
+  /* Diagnostic Styling. Delete When Done. */
+  body:before {
+       background: yellow;
+       content: "Mobile Size";
+  }
+  
+}
+
+/* Tablet:  768px = 160em */
+@media screen and (min-width: 48em)  {
+
+  /* Diagnostic Styling. Delete When Done. */
+  body:before {
+       background: yellow;
+       content: "Tablet Size";
+  }
+
+}
+
+/* Desktop: 1280px = 80em */
+@media screen and (min-width: 80em) { 
+  
+  /* Diagnostic Styling. Delete When Done. */
+  body:before {
+       background: yellow;
+       content: "Desktop Size";
+  }
+
+}   
     
 }
 
@@ -28,10 +61,10 @@ body {
 /* Dropdown Button */
 .dropbtn {
     margin: 30px 0 0 30px;
-    background: url(../img/J.png);
+    background: url(../img/j_2.png);
     width: 100px;
     height: 100px;
-    color: white;
+    color: transparent
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -57,10 +90,11 @@ body {
 
 /* Links inside the dropdown */
 .dropdown-content a {
+    display: block;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
+
 }
 
 /* Change color of dropdown links on hover */
@@ -72,40 +106,13 @@ body {
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
+.dropbtn:hover {
+
     background-color: #3e8e41;
+    transition: background 1s;
+    border-radius: 5px;
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*Contact Styling*/
