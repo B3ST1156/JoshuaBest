@@ -42,8 +42,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: 'Open Sans', sans-serif;
-	font-size: 125%;
+    font-size: 125%;
      }
 
 .contact {
@@ -93,13 +92,6 @@
 
 /*Primary Nav Styling*/
 /*==============================================================================================*/
-
-/* 
-* Imported `Global`
-* http://codepen.io/manikoth/pen/vxpQwK 
-*/
-
-
 
 nav a:link, 
 nav a:visited {
@@ -164,12 +156,6 @@ nav a:active {
     background .5s,
     border-radius 1s;
 }
-
-
-
-
-
-
 
 /*Contact Styling*/
 /*==============================================================================================*/
@@ -244,10 +230,6 @@ input[type="submit"]:hover {
 }
 
 
-
-
-
-
 /*Portfolio Styling*/
 /*==============================================================================================/* 
 * Imported `Global`
@@ -257,8 +239,11 @@ input[type="submit"]:hover {
 .gallery {
     display: flex;
     flex-wrap: wrap;
+    
 }
 .gallery figure {
+  
+  border-radius: 15px;
   background: rgba(0, 0, 0, .75);
   color: white;
   /* Note: Figures have default 1em margin. Optionally override. */
@@ -266,13 +251,25 @@ input[type="submit"]:hover {
   width: 350px;
 }
 
+.figcard {
+    font-family: 'Dosis', sans-serif;
+}
+
+
 .gallery img {
-  border: solid 5px #6d6e71;
-  border-radius: 5px;
+  max-width: 100%;
+  max-height: 100%;
+  
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
+.gallery img:hover {
+  -webkir-filter: blur(2px);
+  filter:blur(2px);
+}
+
 .gallery figcaption {
+  font-family: 'IM Fell English', serif;
   margin-top: 1em;
   color: white;
 }
@@ -287,6 +284,25 @@ input[type="submit"]:hover {
 /* show */
 .overlay:target {
   display: block;
+}
+
+#bth2 {
+    display: flex;
+    justify-content: center;
+    border-radius: 2px;
+    margin: 15px auto auto auto;
+    width: 125px;
+    height: 25px;
+    background: rgba(0, 0, 0, .75);
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    
+}
+
+#bth2:hover {
+    background: rgba(255, 255, 255, .50);
+    color: rgba(0, 0, 0, .75);
 }
 
 
@@ -320,7 +336,14 @@ h1 {
 
 .resume ul li {
      list-style-type: square;
+     font-family: 'IM Fell English', serif;
+     line-height: 25px;
+     
     
+}
+
+#skilllist li {
+    line-height: 50px;
 }
 
 #skills li {
@@ -328,6 +351,7 @@ h1 {
 }
 
 h3 {
+    font-family: 'Dosis', sans-serif;
     margin-left: 10px;
 }
 
